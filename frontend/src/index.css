@@ -55,6 +55,15 @@
   }
 }
 
+input,
+input:active,
+input:focus,
+textarea,
+textarea:focus,
+textarea:active {
+  outline: none;
+}
+
 .gola {
   height: 10px;
   width: 10px;

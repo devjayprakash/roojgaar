@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../components/logo";
 
-
 let RegisterCard = ({ setIsEmployer, isEmployer }) => {
   return (
     <div
@@ -13,7 +12,7 @@ let RegisterCard = ({ setIsEmployer, isEmployer }) => {
     >
       <h1 className="text-center mb-10 text-3xl font-bold text-gray-700">
         Register
-    </h1>
+      </h1>
       <div className="w-full">
         <table className="w-full">
           <tr>
@@ -105,13 +104,12 @@ let RegisterCard = ({ setIsEmployer, isEmployer }) => {
             }
           >
             Register
-        </div>
+          </div>
         </div>
       </div>
     </div>
-  )
-}
-
+  );
+};
 
 let LeftSection = () => {
   return (
@@ -123,7 +121,7 @@ let LeftSection = () => {
       className="flex flex-col justify-around text-center"
     >
       <h1 className="text-5xl text-white">Welcome</h1>
-      
+
       <div className={"text-white text-xl my-3"}>
         Get the right work or worker in one place.
       </div>
@@ -136,10 +134,10 @@ let LeftSection = () => {
         to="/login"
       >
         Login
-          </Link>
+      </Link>
     </div>
-  )
-}
+  );
+};
 
 const SignupPage = ({ className }) => {
   if (!className) className = "";
@@ -151,12 +149,10 @@ const SignupPage = ({ className }) => {
         className
       }
     >
-      <nav >
+      <nav>
         <Logo className="absolute p-10" />
-
-
       </nav>
-      <div className={'flex-grow flex justify-between items-center'}>
+      <div className={"flex-grow flex justify-between items-center"}>
         <LeftSection />
         <RegisterCard setIsEmployer={setIsEmployer} isEmployer={isEmployer} />
       </div>

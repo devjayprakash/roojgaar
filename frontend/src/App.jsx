@@ -7,14 +7,22 @@ import SignupPage from "./pages/signup";
 import logo from "./logo512.png";
 import nf from "./pages/notfound/notfound.png";
 import NavBar from "./components/navbar";
+import WorkerHomePage from "./pages/workerhome";
+import WorkerCompanies from "./pages/workercompanies";
 
 function App() {
   return (
     <div className="App select-none">
       <BrowserRouter>
         <Switch>
-          <Route path="/nav">
-            <NavBar withSearch />
+          <Route path="/workerhome">
+            <WorkerHomePage />
+          </Route>
+          <Route path="/workercompanies">
+            <WorkerCompanies />
+          </Route>
+          <Route path="/test">
+            <WorkerHomePage />
           </Route>
           <Route path="/" exact>
             <HomePage />
@@ -24,44 +32,6 @@ function App() {
           </Route>
           <Route path="/login">
             <LoginPage />
-          </Route>
-          <Route path="/component">
-            <div className="flex flex-wrap">
-              <Card
-                active
-                name="Jay Prajash Pathak"
-                rate="$400/day"
-                desc="Some Desctiption lanina Jdnfdsfdf Dfdffdsd Dfsdf Reghf Dfs"
-                head={"Best Electrisnn Jamshedpur."}
-              />
-              <Card
-                active
-                name="Jay Prajash Pathak"
-                rate="$400/day"
-                desc="Some Desctiption lanina Jdnfdsfdf Dfdffdsd Dfsdf Reghf Dfs"
-                head={"Best Electrisnn Jamshedpur."}
-              />
-              <Card
-                src={logo}
-                photo={nf}
-                name="Jay Prajash Pathak"
-                rate="$400/day"
-                desc="Some Desctiption lanina Jdnfdsfdf Dfdffdsd Dfsdf Reghf Dfs"
-                head={"Best Electrisnn Jamshedpur."}
-              />
-              <Card
-                name="Jay Prajash Pathak"
-                rate="$400/day"
-                desc="Some Desctiption lanina Jdnfdsfdf Dfdffdsd Dfsdf Reghf Dfs"
-                head={"Best Electrisnn Jamshedpur."}
-              />
-              <Card
-                name="Jay Prajash Pathak"
-                rate="$400/day"
-                desc="Some Desctiption lanina Jdnfdsfdf Dfdffdsd Dfsdf Reghf Dfs"
-                head={"Best Electrisnn Jamshedpur."}
-              />
-            </div>
           </Route>
           <Route>
             <NotFoundPage />

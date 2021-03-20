@@ -7,11 +7,12 @@
   animation: fadein backwards 1s;
 }
 
-@keyframe fadein {
+/* animation */
+@keyframes fadein {
   0% {
     opacity: 0;
   }
-  ,
+
   100% {
     opacity: 1;
   }

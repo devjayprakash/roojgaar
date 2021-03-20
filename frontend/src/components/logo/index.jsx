@@ -9,11 +9,11 @@ const Logo = ({ className }) => {
         style={{
           color: "cyan",
         }}
-        className="text-5xl font-bold"
+        className="text-4xl font-bold"
       >
         रोज़
       </div>
-      <div className="text-5xl font-bold text-white">Gaar</div>
+      <div className="text-4xl font-bold text-white">Gaar</div>
     </Link>
   );
 };

@@ -38,9 +38,6 @@ function App() {
           <Route path="/workercompanies">
             <WorkerCompanies />
           </Route>
-          <Route path="/test">
-            <WorkerHomePage />
-          </Route>
           <Route path="/" exact>
             <HomePage />
           </Route>

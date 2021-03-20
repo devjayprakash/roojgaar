@@ -3,10 +3,10 @@ import NavBar from "../../components/navbar";
 import WorkerHomeCardCompany from "../../components/workerHomeCardCompany";
 import WorkerHomeCardIndividual from "../../components/workerHomeCardIndividual";
 import WorkerNav from "../../components/workernav";
-import "./index.css"
+import "./index.css";
 const WorkerHomePage = () => {
   return (
-    <div>
+    <div className="h-fulls bg-gray-100">
       <NavBar />
       <WorkerNav
         link1="/workerhome"

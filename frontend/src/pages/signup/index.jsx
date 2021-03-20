@@ -13,7 +13,7 @@ let RegisterCard = ({ setIsEmployer, isEmployer }) => {
         border: "1px solid rgba( 255, 255, 255, 0.18 )",
         borderRadius: "100px 0 0 100px",
       }}
-      className="w-full --bg-gray-50-- px-3 py-20 items-center max-w-4xl"
+      className="w-full px-3 py-20 items-center max-w-4xl fade"
     >
       <h1 className="text-center mb-10 text-3xl font-bold text-gray-700">
         Register
@@ -123,7 +123,7 @@ let LeftSection = () => {
         paddingLeft: "10%",
         paddingRight: "10%",
       }}
-      className="flex fade2 flex-col justify-around text-center"
+      className="flex flex-col justify-around text-center fade"
     >
       <h1 className="text-5xl text-white">Welcome</h1>
 
@@ -150,7 +150,7 @@ const SignupPage = ({ className }) => {
   return (
     <div
       className={
-        "bg-gradient-to-br fade flex flex-col from-purple-800 to-blue-500  h-screen w-full " +
+        "bg-gradient-to-br flex flex-col from-purple-800 to-blue-500  h-screen w-full " +
         className
       }
     >

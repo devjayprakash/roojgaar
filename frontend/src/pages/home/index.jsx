@@ -5,12 +5,12 @@ import Logo from "../../components/logo";
 const HomePage = ({ className }) => {
   if (!className) className = "";
   return (
-    <div className={"flex w-screen h-screen  fade" + className}>
+    <div className={"flex w-screen h-screen " + className}>
       <div
         style={{
           borderRadius: "0 0 10rem 0",
         }}
-        className="w-2/3 h-5/6  bg-gradient-to-br from-purple-700 to-blue-400"
+        className="w-2/3 h-5/6  bg-gradient-to-br from-purple-700 to-blue-400 fade"
       >
         <Logo className="m-10 mb-20 fade 2" />
         <div className="flex flex-col justify-center items-center">
@@ -59,13 +59,13 @@ const HomePage = ({ className }) => {
             style={{
               borderWidth: "0px",
             }}
-            className="w-36 h-36 bg-white rounded-3xl shadow-2xl border-gray-500 boxes"
+            className="w-36 h-36 bg-white rounded-3xl shadow-2xl border-gray-500 boxes upd"
           ></div>
           <div
             style={{
               borderWidth: "0px",
             }}
-            className="w-32 h-32 mb-4 ml-4 bg-purple-700 rounded-3xl shadow-2xl border-gray-500 boxes"
+            className="w-32 h-32 mb-4 ml-4 bg-purple-700 rounded-3xl shadow-2xl border-gray-500 boxes up"
           ></div>
         </div>
         <div className="flex">
@@ -74,14 +74,14 @@ const HomePage = ({ className }) => {
               backgroundColor: "#ff6767",
               borderWidth: "0px",
             }}
-            className="w-32 h-32 rounded-3xl shadow-2xl border-gray-500 boxes mt-4 mr-4"
+            className="w-32 h-32 rounded-3xl shadow-2xl border-gray-500 boxes mt-4 mr-4 up"
           ></div>
           <div
             style={{
               backgroundColor: "cyan",
               borderWidth: "0px",
             }}
-            className="w-36 h-36 bg-purple-700 rounded-3xl shadow-2xl border-gray-500 boxes"
+            className="w-36 h-36 bg-purple-700 rounded-3xl shadow-2xl border-gray-500 boxes upd"
           ></div>
         </div>
       </div>

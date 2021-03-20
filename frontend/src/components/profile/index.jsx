@@ -5,7 +5,7 @@ const Popup = ({ setState, className }) => {
   return (
     <div
       className={
-        "h-screen w-screen flex justify-center items-center  " + className
+        "h-screen w-screen flex justify-center items-center fade1h " + className
       }
     >
       <div className="h-2/3 w-2/3 shadow-xl rounded-3xl bg-white">
@@ -63,7 +63,7 @@ const Popup = ({ setState, className }) => {
             min="1"
             defaultValue={1}
           />
-          <div className="bg-pink-500 font-bold py-2 px-3 rounded-md text-white cursor-pointer">
+          <div className="bg-pink-500 font-bold py-2 px-3 rounded-md text-white cursor-pointer upd">
             Create Hire
           </div>
         </div>

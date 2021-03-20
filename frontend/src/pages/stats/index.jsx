@@ -37,7 +37,7 @@ const StatsPage = () => {
           style={{
             borderWidth: "1px",
           }}
-          className="border-gray-400 mx-5 bg-white"
+          className="border-gray-400 mx-5 bg-white rounded-md fade1h"
         />
         <div>
           <div className="text-2xl font-bold">50 Electricians Jamshedpur</div>
@@ -47,20 +47,11 @@ const StatsPage = () => {
             ghcgcfgcyj ghcgcfgcyj ghcgcfgcyj
           </div>
           <br />
-          <div className="font-bold text-pink-600">$400/day</div>
+          <div className="font-bold text-pink-500">$400/day</div>
         </div>
       </div>
-      <div className="w-4/5 bg-white mx-20">
+      <div className="w-4/5 bg-white mx-20 pb-5 rounded-md fade">
         <div className="p-5 flex flex-wrap justify-between">
-          <Person src={defsrc} name="Ram Das Prasad" />
-          <Person src={defsrc} name="Ram Das Prasad" />
-          <Person src={defsrc} name="Ram Das Prasad" />
-          <Person src={defsrc} name="Ram Das Prasad" />
-          <Person src={defsrc} name="Ram Das Prasad" />
-          <Person src={defsrc} name="Ram Das Prasad" />
-          <Person src={defsrc} name="Ram Das Prasad" />
-          <Person src={defsrc} name="Ram Das Prasad" />
-          <Person src={defsrc} name="Ram Das Prasad" />
           <Person src={defsrc} name="Ram Das Prasad" />
           <Person src={defsrc} name="Ram Das Prasad" />
           <Person src={defsrc} name="Ram Das Prasad" />
@@ -71,10 +62,10 @@ const StatsPage = () => {
           <Person src={defsrc} name="Ram Das Prasad" />
         </div>
         <div className="flex w-full justify-center">
-          <div className="bg-green-500 h-10 px-3 rounded-md text-center py-2 mr-2">
+          <div className="bg-green-500 h-10 px-3 rounded-md text-center py-2 mr-2 up">
             Hire All
           </div>
-          <div className="bg-red-500 h-10 px-3 rounded-md text-center py-2">
+          <div className="bg-red-500 h-10 px-3 rounded-md text-center py-2 up">
             Decline All
           </div>
         </div>

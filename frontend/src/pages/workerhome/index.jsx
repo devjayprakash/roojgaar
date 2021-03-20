@@ -14,10 +14,10 @@ const WorkerHomePage = () => {
         name="Companies"
       />
       <div className="status-space">
-        <div className="head">Company Hiring</div>
-        <WorkerHomeCardCompany />
-        <div className="head">Individual Hiring</div>
-        <WorkerHomeCardIndividual />
+        <div className="head ">Company Hiring</div>
+        <WorkerHomeCardCompany className="fade" />
+        <div className="head ">Individual Hiring</div>
+        <WorkerHomeCardIndividual className="fade" />
       </div>
     </div>
   );

@@ -1,16 +1,12 @@
 import React from "react";
 import NavBar from "../../components/navbar";
-import WorkerNav from "../../components/workernav";
+import OurNav from "../../components/workernav";
 
 const WorkerCompanies = () => {
   return (
     <div>
       <NavBar />
-      <WorkerNav
-        link1="/workerhome"
-        link2="/workercompanies"
-        name="Companies"
-      />
+      <OurNav link1="/workerhome" link2="/workercompanies" name="Companies" />
     </div>
   );
 };

@@ -39,7 +39,7 @@ const Hire = () => {
           className={"border-2 border-gray-400 px-3 py-2 rounded-lg w-3/4"}
         />
       </div>
-      <div className="rounded-xl mt-5 w-1/3 h-10 px-5 py-2 cursor-pointer text-center mt-1 font-bold text-white mr-10 hover:shadow-xl bg-pink-500 duration-200">
+      <div className="rounded-xl my-20 text-center  mx-60 w-1/3 h-10 px-5 py-2 cursor-pointer text-center mt-1 font-bold text-white mr-10 hover:shadow-xl bg-pink-500 duration-200">
         Hire Me
       </div>
     </div>

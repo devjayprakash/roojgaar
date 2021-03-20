@@ -6,9 +6,14 @@ let RegisterCard = ({ setIsEmployer, isEmployer }) => {
   return (
     <div
       style={{
+        background: "rgba( 255, 255, 255, 0.20 )",
+        boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
+        backdropFilter: "blur( 4px )",
+        borderRadius: "10px",
+        border: "1px solid rgba( 255, 255, 255, 0.18 )",
         borderRadius: "100px 0 0 100px",
       }}
-      className="w-full bg-gray-50 px-3 py-20 items-center max-w-4xl"
+      className="w-full --bg-gray-50-- px-3 py-20 items-center max-w-4xl"
     >
       <h1 className="text-center mb-10 text-3xl font-bold text-gray-700">
         Register
@@ -100,7 +105,7 @@ let RegisterCard = ({ setIsEmployer, isEmployer }) => {
         <div className={"w-full flex justify-end"}>
           <div
             className={
-              "px-7 py-2 text-white bg-pink-500 font-bold rounded-full mt-4 mr-10 cursor-pointer select-none"
+              "px-7 py-2 text-white upd bg-pink-500 font-bold rounded-full mt-4 mr-10 cursor-pointer select-none"
             }
           >
             Register
@@ -118,11 +123,11 @@ let LeftSection = () => {
         paddingLeft: "10%",
         paddingRight: "10%",
       }}
-      className="flex flex-col justify-around text-center"
+      className="flex fade2 flex-col justify-around text-center"
     >
       <h1 className="text-5xl text-white">Welcome</h1>
 
-      <div className={"text-white text-xl my-3"}>
+      <div className={"text-white text-xl opacity-75 twxt-gray-300 my-3"}>
         Get the right work or worker in one place.
       </div>
 
@@ -130,7 +135,7 @@ let LeftSection = () => {
         style={{
           backgroundColor: "cyan",
         }}
-        className="bg-gray-400 py-3 px-10 rounded-full font-bold text-xl select-none"
+        className="bg-gray-400 up opacity-100 text-white py-3 px-10 rounded-full font-bold text-xl select-none"
         to="/login"
       >
         Login
@@ -145,12 +150,12 @@ const SignupPage = ({ className }) => {
   return (
     <div
       className={
-        "bg-gradient-to-br flex flex-col from-purple-800 to-blue-500  h-screen w-full " +
+        "bg-gradient-to-br fade flex flex-col from-purple-800 to-blue-500  h-screen w-full " +
         className
       }
     >
       <nav>
-        <Logo className="absolute p-10" />
+        <Logo className="absolute p-10 fade2" />
       </nav>
       <div className={"flex-grow flex justify-between items-center"}>
         <LeftSection />

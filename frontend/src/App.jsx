@@ -11,7 +11,7 @@ import WorkerHomePage from "./pages/workerhome";
 import WorkerCompanies from "./pages/workercompanies";
 import Ehomepage from "./pages/emplyerhome";
 import Order from "./pages/employerOrders";
-import Chome from "./pages/companyHome";
+import Companyhome from "./pages/companyHome";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/company">
-            <Chome />
+            <Companyhome />
           </Route>
           <Route path="/employerhome">
             <Ehomepage />

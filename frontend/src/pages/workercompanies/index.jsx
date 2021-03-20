@@ -6,7 +6,11 @@ const WorkerCompanies = () => {
   return (
     <div>
       <NavBar />
-      <WorkerNav />
+      <WorkerNav
+        link1="/workerhome"
+        link2="/workercompanies"
+        name="Companies"
+      />
     </div>
   );
 };

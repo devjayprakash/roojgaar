@@ -6,9 +6,14 @@ let RegisterCard = ({ setIsEmployer, isEmployer }) => {
   return (
     <div
       style={{
+        background: "rgba( 255, 255, 255, 0.20 )",
+        boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
+        backdropFilter: "blur( 4px )",
+        borderRadius: "10px",
+        border: "1px solid rgba( 255, 255, 255, 0.18 )",
         borderRadius: "100px 0 0 100px",
       }}
-      className="w-full fade2h bg-gray-50 px-3 py-20 items-center max-w-4xl"
+      className="w-full --bg-gray-50-- px-3 py-20 items-center max-w-4xl"
     >
       <h1 className="text-center mb-10 text-3xl font-bold text-gray-700">
         Register

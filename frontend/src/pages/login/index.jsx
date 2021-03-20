@@ -11,13 +11,13 @@ const LoginPage = ({ className }) => {
         className
       }
     >
-      <Logo className="mb-32" />
+      <Logo className="mb-16" />
       <div
         style={{
           background: "rgba( 255, 255, 255, 0.25 )",
           boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
           backdropFilter: "blur( 4px )",
-          borderRadius: "10px",
+          borderRadius: "0px",
           border: "1px solid rgba( 255, 255, 255, 0.18 )",
         }}
         className="p-10 flex flex-col items-center justify-center w-1/2 max-w-xl"

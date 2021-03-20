@@ -1,0 +1,18 @@
+.status-space{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.head{
+    display: flex;
+    width: 80%;
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-weight: 600;
+    color: rgb(95, 95, 95);
+}

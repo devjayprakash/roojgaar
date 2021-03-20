@@ -26,7 +26,7 @@ const Card = ({
         borderWidth: "2px",
       }}
       className={
-        "mx-2 my-3 w-64 rounded-2xl bg-white hover:shadow-xl " + className
+        "fade2 mx-2 my-3 w-64 rounded-2xl bg-white hover:shadow-xl " + className
       }
     >
       <img

@@ -25,7 +25,11 @@
 }
 
 .up {
-  animation: up forwards 1s;
+  animation: up backwards 1s;
+}
+.upd {
+  animation: up backwards 1s;
+  animation-delay: 1s;
 }
 
 /* animation */

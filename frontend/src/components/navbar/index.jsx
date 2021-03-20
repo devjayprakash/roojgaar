@@ -30,7 +30,7 @@ const NavBar = ({ withSearch, className }) => {
           </div>
         </div>
       )}
-      <div className="rounded-xl h-10 px-5 py-2 text-center mt-1 font-bold text-white mr-10 hover:shadow-xl bg-pink-500 duration-200">
+      <div className="rounded-xl h-10 px-5 py-2 cursor-pointer text-center mt-1 font-bold text-white mr-10 hover:shadow-xl bg-pink-500 duration-200">
         Logout
       </div>
     </nav>

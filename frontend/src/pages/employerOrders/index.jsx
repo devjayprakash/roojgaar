@@ -9,14 +9,14 @@ const Order = () => {
       <Navbar withSearch />
       <OurNav link1="/employerhome" link2={"/order"} name="Orders" />
       <div className="flex justify-center flex-wrap mt-10 .fade">
-        <Card accepted />
-        <Card accepted />
-        <Card accepted />
-        <Card accepted />
-        <Card accepted />
-        <Card accepted />
-        <Card accepted />
-        <Card accepted />
+        <Card accepted className="cursor-pointer" />
+        <Card accepted className="cursor-pointer" />
+        <Card accepted className="cursor-pointer" />
+        <Card accepted className="cursor-pointer" />
+        <Card accepted className="cursor-pointer" />
+        <Card accepted className="cursor-pointer" />
+        <Card accepted className="cursor-pointer" />
+        <Card accepted className="cursor-pointer" />
       </div>
     </div>
   );

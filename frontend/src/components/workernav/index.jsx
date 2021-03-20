@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const WorkerNav = () => {
+const OurNav = ({ link1, link2, name }) => {
   return (
     <>
       <div className="w-full flex justify-center">
@@ -11,7 +11,7 @@ const WorkerNav = () => {
               textUnderlineOffset: ".5rem",
             }}
             activeClassName="underline"
-            to="/workerhome"
+            to={link1}
             className="text-xl text-purple-700"
           >
             Home
@@ -21,10 +21,10 @@ const WorkerNav = () => {
               textUnderlineOffset: ".5rem",
             }}
             activeClassName="underline"
-            to="/workercompanies"
+            to={link2}
             className="text-xl text-purple-700"
           >
-            Companies
+            {name}
           </NavLink>
         </div>
       </div>
@@ -39,4 +39,4 @@ const WorkerNav = () => {
   );
 };
 
-export default WorkerNav;
+export default OurNav;

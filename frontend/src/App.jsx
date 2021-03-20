@@ -9,12 +9,24 @@ import nf from "./pages/notfound/notfound.png";
 import NavBar from "./components/navbar";
 import WorkerHomePage from "./pages/workerhome";
 import WorkerCompanies from "./pages/workercompanies";
+import Ehomepage from "./pages/emplyerhome";
+import Order from "./pages/employerOrders";
+import Chome from "./pages/companyHome";
 
 function App() {
   return (
-    <div className="App select-none">
+    <div className="App select-none bg-gray-100 h-screen">
       <BrowserRouter>
         <Switch>
+          <Route path="/company">
+            <Chome />
+          </Route>
+          <Route path="/employerhome">
+            <Ehomepage />
+          </Route>
+          <Route path="/order">
+            <Order />
+          </Route>
           <Route path="/workerhome">
             <WorkerHomePage />
           </Route>

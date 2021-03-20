@@ -2,7 +2,18 @@ import React from "react";
 import defsrc from "./defsrc.webp";
 import defphoto from "./defphoto.png";
 
-const Card = ({ src, head, desc, name, photo, rate, active, className }) => {
+const Card = ({
+  src,
+  head,
+  desc,
+  name,
+  photo,
+  rate,
+  active,
+  accepted,
+  className,
+  btntxt,
+}) => {
   if (!src) src = defsrc;
   if (!head) head = "";
   if (!desc) desc = "";
@@ -14,7 +25,9 @@ const Card = ({ src, head, desc, name, photo, rate, active, className }) => {
       style={{
         borderWidth: "2px",
       }}
-      className={"mx-2 my-3 w-64 rounded-2xl " + className}
+      className={
+        "mx-2 my-3 w-64 rounded-2xl bg-white hover:shadow-xl " + className
+      }
     >
       <img
         src={src}
@@ -24,7 +37,7 @@ const Card = ({ src, head, desc, name, photo, rate, active, className }) => {
         alt="image"
         className="w-full h-sm rounded-2xl"
       />
-      <div className="p-3 flex flex-col items-center text-center">
+      <div className="p-4 flex flex-col items-center text-center h-3/5 justify-end">
         <h3 className="text-md font-bold">{head}</h3>
         <p className="text-sm">{desc}</p>
         <h3 className="text-pink-500">{rate}</h3>
@@ -50,9 +63,19 @@ const Card = ({ src, head, desc, name, photo, rate, active, className }) => {
           }}
           className="rounded-full mx-7 my-1 w-full"
         />
-        <div className="py-1 rounded-full w-2/3 bg-red-500 cursor-pointer">
-          Hire
-        </div>
+        {accepted ? (
+          <div className="text-white bg-green-700 w-full rounded-lg">
+            Accepted
+          </div>
+        ) : btntxt ? (
+          <div className="py-1 rounded-full w-2/3 bg-red-500 cursor-pointer text-white hover:shadow-lg">
+            {btntxt}
+          </div>
+        ) : (
+          <div className="py-1 rounded-full w-2/3 bg-red-500 cursor-pointer text-white hover:shadow-lg">
+            Hire
+          </div>
+        )}
       </div>
     </div>
   );

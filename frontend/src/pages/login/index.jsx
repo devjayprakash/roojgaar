@@ -7,11 +7,11 @@ const LoginPage = ({ className }) => {
   return (
     <div
       className={
-        "w-screen h-screen bg-gradient-to-br from-purple-700 to-blue-400 flex flex-col justify-center items-center " +
+        "w-screen h-screen bg-gradient-to-br from-purple-700 to-blue-400 flex flex-col justify-evenly items-center " +
         className
       }
     >
-      <Logo className="mb-32" />
+      <Logo />
       <div
         style={{
           background: "rgba( 255, 255, 255, 0.25 )",

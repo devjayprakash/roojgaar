@@ -12,12 +12,16 @@ import WorkerCompanies from "./pages/workercompanies";
 import Ehomepage from "./pages/emplyerhome";
 import Order from "./pages/employerOrders";
 import Companyhome from "./pages/companyHome";
+import Hire from "./pages/hireme";
 
 function App() {
   return (
     <div className="App select-none bg-gray-100 h-screen">
       <BrowserRouter>
         <Switch>
+          <Route path="/company/hire">
+            <Hire />
+          </Route>
           <Route path="/company">
             <Companyhome />
           </Route>

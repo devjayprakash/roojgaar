@@ -17,13 +17,13 @@ const Order = () => {
           active
           rate="$200/day"
         />
-        <Card accepted />
-        <Card accepted />
-        <Card accepted />
-        <Card accepted />
-        <Card accepted />
-        <Card accepted />
-        <Card accepted />
+        <Card accepted className="cursor-pointer" />
+        <Card accepted className="cursor-pointer" />
+        <Card accepted className="cursor-pointer" />
+        <Card accepted className="cursor-pointer" />
+        <Card accepted className="cursor-pointer" />
+        <Card accepted className="cursor-pointer" />
+        <Card accepted className="cursor-pointer" />
       </div>
     </div>
   );

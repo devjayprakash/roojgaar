@@ -3,16 +3,49 @@
 @tailwind components;
 @tailwind utilities;
 
+.shad {
+  /* box-shadow: 1.5px 0.5px 10px #000; */
+}
+
 .fade {
   animation: fadein backwards 1s;
 }
 
-@keyframe fadein {
+.fade1h {
+  animation: fadein backwards 1.5s;
+}
+
+.fade2 {
+  animation: fadein backwards 2s;
+}
+
+.fade2h {
+  animation: fadein backwards 2.5s;
+}
+
+.up {
+  animation: up forwards 1s;
+}
+
+/* animation */
+@keyframes fadein {
   0% {
     opacity: 0;
   }
-  ,
+
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes up {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

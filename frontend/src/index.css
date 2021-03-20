@@ -21,6 +21,7 @@
 
 .fade2h {
   animation: fadein backwards 2.5s;
+  animation-delay: 1s;
 }
 
 .up {

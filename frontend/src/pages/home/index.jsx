@@ -15,7 +15,7 @@ const HomePage = ({ className }) => {
         <Logo className="m-10 mb-20 fade 2" />
         <div className="flex flex-col justify-center items-center">
           <h1 className="w-full text-center text-white text-7xl font-bold fade2h">
-            X Curiosity
+            xCuriosity
           </h1>
           <br />
           <h3 className="w-full text-center text-gray-300 px-5 text-2xl fade2h">

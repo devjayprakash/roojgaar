@@ -4,9 +4,12 @@ import Card from "../../components/maincard";
 import Navbar from "../../components/navbar";
 import OurNav from "../../components/workernav";
 import add from "./plus.svg";
+import { useHistory } from "react-router";
 
 const Chome = () => {
   let [detailed, setDetailed] = useState(false);
+  let his = useHistory();
+  let statid = 1234;
   return (
     <div className=" w-screen">
       <Navbar />
@@ -17,8 +20,8 @@ const Chome = () => {
       ) : (
         <div className="flex justify-center flex-wrap m-10 ">
           <Card
-            onClick={() => {
-              setDetailed(true);
+            onBtnClick={() => {
+              his.push(`/stats/${statid}`);
             }}
             name="Jotish pappu"
             desc="i aha s dfwkfkweb fyugwbfh wgf"
@@ -26,8 +29,8 @@ const Chome = () => {
             btntxt="See stats"
           />
           <Card
-            onClick={() => {
-              setDetailed(true);
+            onBtnClick={() => {
+              his.push(`/stats/${statid}`);
             }}
             head="Professional Web Developer"
             name="Jotish pappu"
@@ -36,6 +39,9 @@ const Chome = () => {
             btntxt="See stats"
           />
           <div
+            onClick={() => {
+              setDetailed(true);
+            }}
             style={{
               borderWidth: "2px",
             }}

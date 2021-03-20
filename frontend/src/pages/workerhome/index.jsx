@@ -22,7 +22,7 @@ const Details = () => {
 
 const WorkerHomePage = () => {
   return (
-    <div>
+    <div className="h-fulls bg-gray-100">
       <NavBar />
       <WorkerNav
         link1="/workerhome"

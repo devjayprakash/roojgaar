@@ -12,6 +12,7 @@ import WorkerCompanies from "./pages/workercompanies";
 import Ehomepage from "./pages/emplyerhome";
 import Order from "./pages/employerOrders";
 import Companyhome from "./pages/companyHome";
+import StatsPage from "./pages/stats";
 import Hire from "./pages/hireme";
 
 function App() {
@@ -37,9 +38,6 @@ function App() {
           <Route path="/workercompanies">
             <WorkerCompanies />
           </Route>
-          <Route path="/test">
-            <WorkerHomePage />
-          </Route>
           <Route path="/" exact>
             <HomePage />
           </Route>
@@ -48,6 +46,9 @@ function App() {
           </Route>
           <Route path="/login">
             <LoginPage />
+          </Route>
+          <Route path="/stats/:id">
+            <StatsPage />
           </Route>
           <Route>
             <NotFoundPage />

@@ -12,6 +12,7 @@ import WorkerCompanies from "./pages/workercompanies";
 import Ehomepage from "./pages/emplyerhome";
 import Order from "./pages/employerOrders";
 import Companyhome from "./pages/companyHome";
+import StatsPage from "./pages/stats";
 
 function App() {
   return (
@@ -44,6 +45,9 @@ function App() {
           </Route>
           <Route path="/login">
             <LoginPage />
+          </Route>
+          <Route path="/stats/:id">
+            <StatsPage />
           </Route>
           <Route>
             <NotFoundPage />

@@ -1,8 +1,13 @@
+require('dotenv').config()
 let express = require('express')
 let cors = require('cors')
 let morgan = require('morgan')
+const { logData } = require('./utility')
 
 let app = express()
+
+//database
+require('./database')
 
 let isDev = process.env.NODE_ENV != 'production'
 
@@ -34,5 +39,6 @@ app.use(errorHandler)
 
 let PORT = process.env.PORT || 8080
 app.listen(PORT , () => {
-    console.log(`Server started on port ${PORT} on ${Date.now()}`)
+    //console.clear()
+    logData(`Server started on port ${PORT}`)
 })

@@ -29,6 +29,8 @@ let errorHandler = (err , req , res , next) => {
     })
 }
 
+app.use(errorHandler)
+
 
 let PORT = process.env.PORT || 8080
 app.listen(PORT , () => {

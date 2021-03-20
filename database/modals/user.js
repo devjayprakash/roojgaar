@@ -13,7 +13,7 @@ let User = mongoose.Schema({
         type : String,
         required : true
     },
-    emailID : {
+    email : {
         type : String,
         required : true
     },

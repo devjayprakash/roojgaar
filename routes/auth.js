@@ -12,7 +12,7 @@ router.post('/registerUser' , async (req , res , next) => {
         let saved_user = await user.save()
 
         let token = jwt.sign({
-            email : saved_user._id,
+            id : saved_user._id,
             name : saved_user.name,
             email : saved_user.email
         })
@@ -33,9 +33,34 @@ router.post('/registerUser' , async (req , res , next) => {
 router.post('/loginUser' , (req , res , next) => {
     try {
         let data = req.body;
+        let user = User.findOne({email : data.email})
+
+        if(user !== null && user !== undefined){
+            //checking the password
+            bcrypt.compare(data.password , user.password , (err , same) => {
+                if(err) next(err);
+                if(same){
+                    //user authenticated sucessfully. Now we are generating the token
+                    let token = jwt.sign({
+                        id : user.name,
+                        email : user.email,
+                        name : user.name
+                    })
+
+                    res.cookie('jwt' , token)
+
+                    res.send({
+                        res : true,
+                        msg : "User registered successfully"
+                    })
+                }
+            })
+        }
+
     }catch(err){
         next(err)
     }
 })
+
 
 module.exports = router

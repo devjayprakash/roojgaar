@@ -105,7 +105,7 @@ let RegisterCard = ({ setIsEmployer, isEmployer }) => {
         <div className={"w-full flex justify-end"}>
           <div
             className={
-              "px-7 py-2 text-white up bg-pink-500 font-bold rounded-full mt-4 mr-10 cursor-pointer select-none"
+              "px-7 py-2 text-white upd bg-pink-500 font-bold rounded-full mt-4 mr-10 cursor-pointer select-none"
             }
           >
             Register

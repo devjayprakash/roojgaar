@@ -26,7 +26,7 @@ const HomePage = ({ className }) => {
             style={{
               backgroundColor: "cyan",
             }}
-            className="w-40 py-3 shad text-white my-20 text-center rounded-full fade up font-bold"
+            className="w-40 py-3 shad text-white my-20 text-center rounded-full fade upd font-bold"
           >
             Register Now
           </Link>

@@ -50,7 +50,7 @@ const Card = ({ src, head, desc, name, photo, rate, active, className }) => {
           }}
           className="rounded-full mx-7 my-1 w-full"
         />
-        <div className="py-1 rounded-full w-2/3 bg-red-500 cursor-pointer">
+        <div className="py-1 rounded-full w-2/3 bg-pink-600 text-white cursor-pointer">
           Hire
         </div>
       </div>

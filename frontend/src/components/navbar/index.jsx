@@ -1,8 +1,12 @@
 import React from "react";
+import { useHistory } from "react-router";
 import Logo from "../logo";
 import searchlogo from "./search.png";
 
 const NavBar = ({ withSearch, className }) => {
+
+  let his = useHistory()
+
   if (!className) className = "";
   return (
     <nav
@@ -30,7 +34,11 @@ const NavBar = ({ withSearch, className }) => {
           </div>
         </div>
       )}
-      <div className="rounded-xl h-10 px-5 py-2 cursor-pointer text-center mt-1 font-bold text-white mr-10 hover:shadow-xl bg-pink-500 duration-200">
+      <div onClick={() => {
+        document.cookie = ""
+        window.location = "/"
+        window.location.reload()
+      }} className="rounded-xl h-10 px-5 py-2 cursor-pointer text-center mt-1 font-bold text-white mr-10 hover:shadow-xl bg-pink-500 duration-200">
         Logout
       </div>
     </nav>

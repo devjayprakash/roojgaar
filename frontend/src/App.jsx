@@ -66,15 +66,15 @@ function App() {
             <Route path="/company">
               <Companyhome />
             </Route>
-            <Route path="/employerhome">
-              {auth.userDetail.registeredAs === "employer" ? (<Ehomepage />) : <Redirect to={"/unvalidpath"} />}
-            </Route>
+            <Route path="/employerhome" render={() => {
+              return auth.userDetail.registeredAs === "employer" ? (<Ehomepage />) : <Redirect to={"/unvalidpath"} />
+            }} />
             <Route path="/order">
               <Order />
             </Route>
-            <Route path="/workerhome">
-              {auth.userDetail.registeredAs !== "employer" ? (<WorkerHomePage />) : <Redirect to={"/unvalidpath"} />}
-            </Route>
+            <Route path="/workerhome" render={() => {
+              return auth.userDetail.registeredAs !== "employer" ? (<WorkerHomePage />) : <Redirect to={"/unvalidpath"} />
+            }} />
             <Route path="/workercompanies">
               <WorkerCompanies />
             </Route>
@@ -95,9 +95,9 @@ function App() {
               }
 
             }} />
-            <Route path="/signup">
-              {auth.auth === true ? <Redirect to={'/'} /> : <SignupPage />}
-            </Route>
+            <Route path="/signup" render={() => {
+              return auth.auth === true ? <Redirect to={'/'} /> : <SignupPage />
+            }} />
             <Route path="/login">
               {auth.auth === true ? <Redirect to={'/'} /> : <LoginPage />}
             </Route>

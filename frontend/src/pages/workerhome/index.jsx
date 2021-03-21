@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import NavBar from "../../components/navbar";
 import WorkerHomeCardCompany from "../../components/workerHomeCardCompany";
 import WorkerHomeCardIndividual from "../../components/workerHomeCardIndividual";
@@ -26,6 +26,10 @@ const Details = () => {
 };
 
 const WorkerHomePage = () => {
+
+
+
+
   return (
     <div className="h-fulls bg-gray-100">
       <NavBar />

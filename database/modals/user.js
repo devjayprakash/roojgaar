@@ -1,33 +1,29 @@
 let mongoose = require('mongoose')
 
 let User = mongoose.Schema({
-    name : {
-        type : String,
-        required : true
+    name: {
+        type: String,
+        required: true
     },
-    registeredAs : {
-        type : String,
-        required : true
+    registeredAs: {
+        type: String,
+        required: true
     },
-    type : {
-        type : String,
-        required : true
+    type: {
+        type: String,
     },
-    email : {
-        type : String,
-        required : true
+    email: {
+        type: String,
+        required: true
     },
-    password : {
-        type : String,
-        required : true
+    password: {
+        type: String,
+        required: true
     },
-    //these info is
-    companyName : String,
-    gstIn : String,
-
-    //only if the type is seller
-    jobTitle : String,
-
+    phone: {
+        type: String,
+        required: true
+    }
 })
 
-module.exports = mongoose.model('user' , User)
+module.exports = mongoose.model('user', User)

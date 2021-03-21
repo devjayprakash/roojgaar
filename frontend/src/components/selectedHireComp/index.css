@@ -16,6 +16,10 @@
     border-radius: 50%;
     background-color: aqua;
     margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18pt;
 }
 .name{
     font-size: 1.2rem;

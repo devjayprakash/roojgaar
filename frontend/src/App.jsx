@@ -92,6 +92,8 @@ function App() {
                 } else {
                   return <Redirect to={'/company'} />
                 }
+              } else {
+                return <Redirect to={'/workerhome'} />
               }
 
             }} />

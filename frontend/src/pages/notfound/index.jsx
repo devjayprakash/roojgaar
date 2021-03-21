@@ -13,7 +13,7 @@ const NotFoundPage = ({ className }) => {
     >
       <div className="max-w-lg">
         <img draggable={false} src={NotFoundImg} alt="" srcset="" />
-        <h1 className="text-6xl font-bold">Oops, an ERROR occured!</h1>
+        <h1 className="text-2xl font-bold">The page you are looking for does not exists or you are not allowed to visit</h1>
         <br />
         <h3 className="text-5xl">This is not the page You were looking for.</h3>
       </div>

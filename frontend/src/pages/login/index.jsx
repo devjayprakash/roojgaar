@@ -7,11 +7,11 @@ const LoginPage = ({ className }) => {
   return (
     <div
       className={
-        "fade w-screen h-screen bg-gradient-to-br from-purple-700 to-blue-400 flex flex-col justify-center items-center " +
+        " w-screen h-screen bg-gradient-to-br from-purple-700 to-blue-400 flex flex-col justify-center items-center " +
         className
       }
     >
-      <Logo className="mb-32 fade1" />
+      <Logo className="mb-32 fade" />
       <div
         style={{
           background: "rgba( 255, 255, 255, 0.25 )",
@@ -20,7 +20,7 @@ const LoginPage = ({ className }) => {
           borderRadius: "0px",
           border: "1px solid rgba( 255, 255, 255, 0.18 )",
         }}
-        className="p-10 flex flex-col items-center justify-center w-1/2 max-w-xl"
+        className="p-10 fade flex flex-col items-center justify-center w-1/2 max-w-xl"
       >
         <input
           type={"email"}

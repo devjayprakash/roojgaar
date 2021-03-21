@@ -37,19 +37,19 @@ let RegisterCard = ({ setIsEmployer, isEmployer }) => {
 			if (regData.registeredAs === "employer" && regData.type === "") {
 
 				setErr({
-					show : true,
-					msg : "Please select the employer type"
+					show: true,
+					msg: "Please select the employer type"
 				})
 
 			} else {
 				try {
 					//setLoading(true)
 					delete regData.confirmPass
-					let res = await axios.post('http://localhost:8080/api/v1/auth/registerUser' , regData)
+					let res = await axios.post('http://localhost:8080/api/v1/auth/registerUser', regData)
 
 					if (res.data.res === true) {
-						
-						document.cookie=`jwt=${res.data.token}`
+
+						document.cookie = `jwt=${res.data.token}`
 
 						his.push('/')
 
@@ -96,7 +96,7 @@ let RegisterCard = ({ setIsEmployer, isEmployer }) => {
 				border: "1px solid rgba( 255, 255, 255, 0.18 )",
 				borderRadius: "100px 0 0 100px",
 			}}
-			className="w-full --bg-gray-50-- px-3 py-20 items-center max-w-4xl"
+			className="w-full px-3 py-20 items-center max-w-4xl fade"
 		>
 			<h1 className="text-center mb-10 text-3xl font-bold text-gray-700">
 				Register

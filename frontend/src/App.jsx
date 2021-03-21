@@ -8,6 +8,7 @@ import WorkerCompanies from "./pages/workercompanies";
 import Ehomepage from "./pages/emplyerhome";
 import Order from "./pages/employerOrders";
 import Companyhome from "./pages/companyHome";
+import StatsPage from "./pages/stats";
 import Hire from "./pages/hireme";
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
@@ -99,6 +100,9 @@ function App() {
             </Route>
             <Route path="/login">
               {auth.auth === true ? <Redirect to={'/'} /> : <LoginPage />}
+            </Route>
+            <Route path="/stats/:id">
+              <StatsPage />
             </Route>
             <Route>
               <NotFoundPage />

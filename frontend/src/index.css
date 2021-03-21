@@ -29,7 +29,7 @@
 }
 .upd {
   animation: up backwards 1s;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 /* animation */
@@ -53,6 +53,15 @@
     opacity: 1;
     transform: translateY(0px);
   }
+}
+
+input,
+input:active,
+input:focus,
+textarea,
+textarea:focus,
+textarea:active {
+  outline: none;
 }
 
 .gola {

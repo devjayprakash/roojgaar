@@ -8,9 +8,13 @@ import NewHirePopup from "../newhirepopup";
 import Loader from "../../components/loader";
 import axios from "axios";
 import { AuthContext } from "../../App";
+import { useHistory } from 'react-router-dom'
 
 const Chome = () => {
+
   let [detailed, setDetailed] = useState(false);
+  let his = useHistory();
+  let statid = 1234;
 
   let [showPopup, setShowPopup] = useState(false);
 
@@ -32,7 +36,6 @@ const Chome = () => {
   }, [])
 
   if (allhires == null) return <Loader />
-
   return (
     <div className=" w-screen">
       <Navbar />
@@ -42,19 +45,24 @@ const Chome = () => {
         </div>
       ) : (
         <div className="flex justify-center flex-wrap m-10 ">
-          {allhires.map(hire => {
-            return (
-              <Card
-                onClick={() => {
-                  setDetailed(true);
-                }}
-                name={hire.title}
-                desc={hire.description}
-                active
-                btntxt="See stats"
-              />
-            )
-          })}
+          {
+            allhires.map(hire => {
+              return (
+                <Card
+                  onBtnClick={() => {
+                    his.push(`/stats/${statid}`);
+                  }}
+                  onClick={() => {
+                    setDetailed(true);
+                  }}
+                  name={hire.title}
+                  desc={hire.description}
+                  active
+                  btntxt="See stats"
+                />
+              )
+            })
+          }
           <div
             onClick={() => [
               setShowPopup(true)
@@ -77,9 +85,9 @@ const Chome = () => {
             Create New Hire
           </div>
           <NewHirePopup setShow={setShowPopup} show={showPopup} fetchHires={fetchAllData} />
-        </div>
+        </div >
       )}
-    </div>
+    </div >
   );
 };
 

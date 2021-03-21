@@ -16,6 +16,7 @@ const Card = ({
   className,
   btntxt,
   onClick,
+  onBtnClick,
 }) => {
   if (!src) src = defsrc;
   if (!head) head = "";
@@ -31,7 +32,7 @@ const Card = ({
           borderWidth: "2px",
         }}
         className={
-          "mx-2 my-3 w-64 rounded-2xl bg-white hover:shadow-xl pb-10" +
+          "mx-2 my-3 w-64 rounded-2xl bg-white hover:shadow-xl pb-10 fade1h " +
           className
         }
       >
@@ -75,15 +76,24 @@ const Card = ({
             className="rounded-full mx-7 my-1 w-full"
           />
           {accepted ? (
-            <div className="text-white bg-green-700 w-full rounded-lg">
+            <div
+              onClick={onBtnClick}
+              className="text-white bg-green-700 w-full rounded-lg"
+            >
               Accepted
             </div>
           ) : btntxt ? (
-            <div className="py-1 rounded-full w-2/3 bg-red-500 cursor-pointer text-white hover:shadow-lg">
+            <div
+              onClick={onBtnClick}
+              className="py-1 rounded-full w-2/3 bg-red-500 cursor-pointer text-white hover:shadow-lg"
+            >
               {btntxt}
             </div>
           ) : (
-            <div className="py-1 rounded-full w-2/3 bg-red-500 cursor-pointer text-white hover:shadow-lg">
+            <div
+              onClick={onBtnClick}
+              className="py-1 rounded-full w-2/3 bg-red-500 cursor-pointer text-white hover:shadow-lg up"
+            >
               Hire
             </div>
           )}

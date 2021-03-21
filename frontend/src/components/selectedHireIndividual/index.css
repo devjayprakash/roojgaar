@@ -1,0 +1,44 @@
+.comp {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-between;
+  margin: 1rem;
+}
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proPic {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: aqua;
+  margin-right: 1rem;
+}
+.name {
+  font-size: 1.2rem;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.see-details {
+  font-size: small;
+  background-color: #f45852;
+  display: flex;
+  margin: 3px;
+  padding: 3px;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px rgb(58, 58, 58);
+  box-shadow: 1px 1px 15px #ddd;
+  border-radius: 2px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+.see-details:hover {
+  cursor: pointer;
+}
